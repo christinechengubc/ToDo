@@ -17,7 +17,6 @@ class TodoItem(models.Model):
 class TodoList(models.Model):
     title = models.CharField(max_length=200)
     users = models.ManyToManyField('User', help_text="Share this list with another user...")
-    todo_items = models.ManyToManyField(TodoItem)
 
     def __str__(self):
         return self.title
@@ -27,7 +26,6 @@ class TodoList(models.Model):
 
 class User(models.Model):
     username = models.CharField(max_length=20)
-    todo_lists = models.ManyToManyField(TodoList)
 
     def __str__(self):
         return self.username
