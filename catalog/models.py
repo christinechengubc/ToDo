@@ -5,7 +5,6 @@ from django.urls import reverse # Used to generate URLs by reversing the URL pat
 class TodoItem(models.Model):
     title = models.CharField(max_length=200)
     user = models.ForeignKey('User', on_delete=models.SET_NULL, null=True)
-    description = models.TextField(max_length=1000, help_text="Enter a brief description of the task")
     todo_list = models.ForeignKey('TodoList', on_delete=models.CASCADE)
 
     def __str__(self):
