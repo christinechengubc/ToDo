@@ -1,0 +1,713 @@
+[
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "catalog",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "catalog",
+      "model": "todoitem"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "catalog",
+      "model": "todolist"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "8qcle8995cks3nwmga0fya7bfyjrt87u",
+    "fields": {
+      "session_data": "YWE3OTlhZDU5YmUxMjRlOTczZTQ4MzU1ZjY5M2YzYmZmZjk1OWQwZTp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI0MjFkZGFkZGI2ZDkwY2M5MTIwYWU3NDkwYzc2Y2U5N2M5Nzc1ZGFkIn0=",
+      "expire_date": "2018-01-19T05:17:14.055Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "lkcetif4cwwqxw1wmua4ikf1aqjcdk9z",
+    "fields": {
+      "session_data": "YWE3OTlhZDU5YmUxMjRlOTczZTQ4MzU1ZjY5M2YzYmZmZjk1OWQwZTp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI0MjFkZGFkZGI2ZDkwY2M5MTIwYWU3NDkwYzc2Y2U5N2M5Nzc1ZGFkIn0=",
+      "expire_date": "2018-01-11T08:44:09.147Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "p5x5olz25x4v9hdo7lx6l1d94exy10gh",
+    "fields": {
+      "session_data": "OTg1NjA4YThhMDk1YzEwN2I4N2IxYjdlNDI1ODQ4OTk1MDllZmViMzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3YWUzMjk1OTk0MGIxZWQ5ZDYzMDhiNmI4MjY1ZmYzM2Q2ZTE2N2ZkIn0=",
+      "expire_date": "2018-01-09T08:49:21.371Z"
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 1,
+    "fields": {
+      "title": "Item 1",
+      "user": 1,
+      "todo_list": 1
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 2,
+    "fields": {
+      "title": "Item 2",
+      "user": 1,
+      "todo_list": 1
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 3,
+    "fields": {
+      "title": "Item 3",
+      "user": 1,
+      "todo_list": 1
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 4,
+    "fields": {
+      "title": "Item 4",
+      "user": 1,
+      "todo_list": 1
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 5,
+    "fields": {
+      "title": "Item 5",
+      "user": 1,
+      "todo_list": 1
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 6,
+    "fields": {
+      "title": "Item 1",
+      "user": 1,
+      "todo_list": 2
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 7,
+    "fields": {
+      "title": "Item 2",
+      "user": 1,
+      "todo_list": 2
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 8,
+    "fields": {
+      "title": "Item 3",
+      "user": 1,
+      "todo_list": 2
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 9,
+    "fields": {
+      "title": "Item 4",
+      "user": 1,
+      "todo_list": 2
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 10,
+    "fields": {
+      "title": "Item 5",
+      "user": 1,
+      "todo_list": 2
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 11,
+    "fields": {
+      "title": "Item 6",
+      "user": 1,
+      "todo_list": 2
+    }
+  },
+    {
+    "model": "catalog.todoitem",
+    "pk": 12,
+    "fields": {
+      "title": "Item 7",
+      "user": 1,
+      "todo_list": 2
+    }
+  },
+
+  {
+    "model": "catalog.todoitem",
+    "pk": 13,
+    "fields": {
+      "title": "Item 1",
+      "user": 1,
+      "todo_list": 3
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 14,
+    "fields": {
+      "title": "Item 2",
+      "user": 1,
+      "todo_list": 3
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 15,
+    "fields": {
+      "title": "Item 3",
+      "user": 1,
+      "todo_list": 3
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 16,
+    "fields": {
+      "title": "Item 4",
+      "user": 1,
+      "todo_list": 3
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 17,
+    "fields": {
+      "title": "Item 5",
+      "user": 1,
+      "todo_list": 3
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 18,
+    "fields": {
+      "title": "Item 6",
+      "user": 1,
+      "todo_list": 3
+    }
+  },
+    {
+    "model": "catalog.todoitem",
+    "pk": 19,
+    "fields": {
+      "title": "Item 7",
+      "user": 1,
+      "todo_list": 3
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 20,
+    "fields": {
+      "title": "Item 8",
+      "user": 1,
+      "todo_list": 3
+    }
+  },
+    {
+    "model": "catalog.todoitem",
+    "pk": 21,
+    "fields": {
+      "title": "Item 9",
+      "user": 1,
+      "todo_list": 3
+    }
+  },
+  {
+    "model": "catalog.todolist",
+    "pk": 1,
+    "fields": {
+      "title": "My first list",
+      "users": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "catalog.todolist",
+    "pk": 2,
+    "fields": {
+      "title": "My second list",
+      "users": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "catalog.todolist",
+    "pk": 3,
+    "fields": {
+      "title": "My third list",
+      "users": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "catalog.user",
+    "pk": 1,
+    "fields": {
+      "username": "jujubix"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 7,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 7,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 7,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can add todo item",
+      "content_type": 8,
+      "codename": "add_todoitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can change todo item",
+      "content_type": 8,
+      "codename": "change_todoitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can delete todo item",
+      "content_type": 8,
+      "codename": "delete_todoitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add todo list",
+      "content_type": 9,
+      "codename": "add_todolist"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change todo list",
+      "content_type": 9,
+      "codename": "change_todolist"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete todo list",
+      "content_type": 9,
+      "codename": "delete_todolist"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$36000$KeOwbV0uE3R2$zBnh0iFPxrP4/hJHeXAD4bbvTImfiUm7H+rUQ7iI3vA=",
+      "last_login": "2017-12-26T08:49:21.356Z",
+      "is_superuser": true,
+      "username": "christine",
+      "first_name": "",
+      "last_name": "",
+      "email": "christine.lyn.cheng@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2017-12-26T08:43:43.697Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$36000$eMESks4kIOHJ$NHsvoAq/YcaJUekTtbdcl7picWQepMVm+Bc50QWEWfs=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "test",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2017-12-26T23:51:24Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$36000$jSJTJFsMaoUD$yv16gC/fCmL7JNMU565jprdP677KMdjk6P6anopO+vw=",
+      "last_login": "2018-01-05T05:17:14.038Z",
+      "is_superuser": true,
+      "username": "jujubix",
+      "first_name": "",
+      "last_name": "",
+      "email": "jujubix@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2017-12-28T08:43:29.622Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2017-12-26T23:51:24.650Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "2",
+      "object_repr": "test",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2017-12-26T23:55:37.939Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "2",
+      "object_repr": "test",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2018-01-05T05:17:35.203Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "jujubix",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2018-01-05T05:17:37.010Z",
+      "user": 3,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "My first list",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2018-01-05T05:18:32.380Z",
+      "user": 3,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Item 1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2018-01-05T05:18:42.316Z",
+      "user": 3,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Item 2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2018-01-05T05:18:51.235Z",
+      "user": 3,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Item 3",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  }
+]
