@@ -2,8 +2,8 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import TodoItem, TodoList, User
+from .models import TodoItem, TodoList, Profile
 
 admin.site.register(TodoItem)
 admin.site.register(TodoList)
-admin.site.register(User)
+admin.site.register(Profile)
