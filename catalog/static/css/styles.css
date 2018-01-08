@@ -36,3 +36,9 @@
     background-color: #4CAF50;
     color: white;
 }
+
+.todolist_box {
+    border: black solid;
+    padding: 10px;
+    margin: 10px;
+}
