@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views import generic
 
 # Create your views here.
 
@@ -12,6 +13,8 @@ def index(request):
     num_lists=TodoList.objects.all().count()
     num_items=TodoItem.objects.all().count()
 
+    list_list = TodoList.objects.all()
+
     # Number of visits to this view, as counted in the session variable.
     # This is user specific server side stored info discussed in Part 7
     # num_visits=request.session.get('num_visits', 0)
@@ -24,6 +27,8 @@ def index(request):
         context={
         	'num_lists':num_lists,
         	'num_items':num_items,
+            'list_list':list_list
 #            'num_visits':num_visits
         },
     )
+
