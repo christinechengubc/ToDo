@@ -13,8 +13,8 @@ class TodoItem(models.Model):
     def __str__(self):
         return self.title
 
-    def get_absolute_url(self):
-        return reverse('todo-detail', args=[str(self.id)])
+    # def get_absolute_url(self):
+    #     return reverse('todo-detail', args=[str(self.id)])
 
 class TodoList(models.Model):
     title = models.CharField(max_length=200)

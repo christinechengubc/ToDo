@@ -13,12 +13,9 @@ def index(request):
     num_lists=TodoList.objects.all().count()
     num_items=TodoItem.objects.all().count()
 
-    list_list = TodoList.objects.all()
-
-    # Number of visits to this view, as counted in the session variable.
-    # This is user specific server side stored info discussed in Part 7
-    # num_visits=request.session.get('num_visits', 0)
-    # request.session['num_visits'] = num_visits+1
+    the_list = TodoList.objects.first()
+    todo_list = the_list.todoitem_set.all()
+    list_name = the_list.title
     
     # Render the HTML template index.html with the data in the context variable.
     return render(
@@ -27,8 +24,10 @@ def index(request):
         context={
         	'num_lists':num_lists,
         	'num_items':num_items,
-            'list_list':list_list
-#            'num_visits':num_visits
+            'todo_list':todo_list,
+            'list_name':list_name
         },
     )
 
+class TodoListView(generic.ListView):
+    model = TodoList
