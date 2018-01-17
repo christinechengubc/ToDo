@@ -14,9 +14,9 @@ def index(request):
     num_items=TodoItem.objects.all().count()
 
     the_list = TodoList.objects.first()
-    todo_list = the_list.todoitem_set.all()
+    list_items = the_list.todoitem_set.all()
     list_name = the_list.title
-    
+
     # Render the HTML template index.html with the data in the context variable.
     return render(
         request,
@@ -24,7 +24,7 @@ def index(request):
         context={
         	'num_lists':num_lists,
         	'num_items':num_items,
-            'todo_list':todo_list,
+            'list_items':list_items,
             'list_name':list_name
         },
     )

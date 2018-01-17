@@ -7,16 +7,14 @@
 
 
     {% if object_list %}
-    <ul>
-
-      {% for item in object_list %}
-      <li>
-        <a href="{{ item.get_absolute_url }}">{{ item.title }}</a>
-      </li>
-      {% endfor %}
-
-    </ul>
+        <ul>
+            {% for item in object_list %}
+            <li>
+                <a href="{{ item.get_absolute_url }}">{{ item.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
     {% else %}
-      <p>You have no lists.</p>
+        <p>You have no lists.</p>
     {% endif %}
 {% endblock %}
