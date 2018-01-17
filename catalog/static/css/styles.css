@@ -37,8 +37,23 @@
     color: white;
 }
 
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .todolist_box {
-    border: black solid;
+    float:left;
     padding: 10px;
     margin: 10px;
+    width: 50%;
+    border: black solid;
+}
+
+.todoitem_box {
+    float:left;
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+    border: black solid;
 }

@@ -2,20 +2,30 @@
 
 {% block content %}
 
-    {% if todo_list %}
-     <h1>{{ list_name }}</h1>
+      {% if list_items %}
+            <h1>{{ list_name }}</h1>
 
+            <div class="wrapper">
+                  <div class="todolist_box">
+                  {% for item in list_items %}
+                  <input id="checkBox" type="checkbox"> {{ item.title }}
+                  <br>
+                  {% endfor %}
+                  </div>
 
-      <div class="todolist_box">
+                  <div class="todoitem_box">
+                        <form>
+                              <h3>Enter a todo item:</h3>
+                              Title: <br>
+                              <input type="text" name="title" value="" /><br>
+                              List: </br>
+                              <input type="text" name="list" default="{{ list_name }}" /><br>
+                        </form>
+                  </div>
+            </div>
 
-      {% for item in todo_list %}
-        <input id="checkBox" type="checkbox"> {{ item.title }}
-        <br>
-      {% endfor %}
-      </div>
-
-    {% else %}
-      <p>There are no items in the to do list.</p>
-    {% endif %}      
+      {% else %}
+          <p>There are no items in the to do list.</p>
+      {% endif %}
 
 {% endblock %}
