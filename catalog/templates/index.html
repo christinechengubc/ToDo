@@ -2,20 +2,20 @@
 
 {% block content %}
 
-    {% if todo_list %}
-     <h1>{{ list_name }}</h1>
+        {% if todo_list %}
+         <h1>{{ list_name }}</h1>
 
 
-      <div class="todolist_box">
+            <div class="todolist_box">
 
-      {% for item in todo_list %}
-        <input id="checkBox" type="checkbox"> {{ item.title }}
-        <br>
-      {% endfor %}
-      </div>
+            {% for item in todo_list %}
+                <input id="checkBox" type="checkbox"> {{ item.title }}
+                <br>
+            {% endfor %}
+            </div>
 
-    {% else %}
-      <p>There are no items in the to do list.</p>
-    {% endif %}      
+        {% else %}
+            <p>There are no items in the to do list.</p>
+        {% endif %}      
 
 {% endblock %}

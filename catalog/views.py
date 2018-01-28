@@ -13,10 +13,14 @@ def index(request):
     num_lists=TodoList.objects.all().count()
     num_items=TodoItem.objects.all().count()
 
-    the_list = TodoList.objects.first()
-    todo_list = the_list.todoitem_set.all()
-    list_name = the_list.title
-    
+    if request.user.is_authenticated():
+        the_list = request.user.todolist_set.first()
+        todo_list = the_list.todoitem_set.all()
+        list_name = the_list.title
+    else:
+        todo_list = []
+        list_name = "No lists available"
+
     # Render the HTML template index.html with the data in the context variable.
     return render(
         request,
