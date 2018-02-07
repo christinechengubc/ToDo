@@ -4,6 +4,7 @@ from django.views import generic
 # Create your views here.
 
 from .models import TodoItem, TodoList
+from .forms import AddItemForm
 
 def index(request):
     """
@@ -21,6 +22,18 @@ def index(request):
         todo_list = []
         list_name = "No lists available"
 
+    if request.method == 'POST':
+        form = AddItemForm(request.POST)
+
+        if form.is_valid():
+            TodoItem.objects.create(title = form.item_title, user = request.user, todo_list = form.item_list)
+
+            return HttpResponseRedirect('index');
+
+    else:
+        print(request.user.todolist_set.all());
+        form = AddItemForm(initial={'lists': request.user.todolist_set.all()})
+
     # Render the HTML template index.html with the data in the context variable.
     return render(
         request,
@@ -28,8 +41,9 @@ def index(request):
         context={
         	'num_lists':num_lists,
         	'num_items':num_items,
-            'todo_list':todo_list,
-            'list_name':list_name
+            'list_items':list_items,
+            'list_name':list_name,
+            'form': form
         },
     )
 

@@ -5,6 +5,13 @@
         {% if todo_list %}
          <h1>{{ list_name }}</h1>
 
+            <div class="wrapper">
+                  <div class="todolist_box">
+                  {% for item in list_items %}
+                  <input id="checkBox" type="checkbox"> {{ item.title }}
+                  <br>
+                  {% endfor %}
+                  </div>
 
             <div class="todolist_box">
 
@@ -14,8 +21,20 @@
             {% endfor %}
             </div>
 
+            <div class="todoitem_box">
+                        <form action="" method="post">
+                              <h3>Enter a todo item:</h3>
+                              <table>
+                                    {{ form }}
+                              </table>
+                              <br>
+                              <input type="submit" value="Add New Item" />
+                        </form>
+                  </div>
+            </div>
+
         {% else %}
             <p>There are no items in the to do list.</p>
-        {% endif %}      
+        {% endif %}
 
 {% endblock %}
