@@ -2,19 +2,33 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-    <h1>My Lists</h1>
+        <h1>My Lists</h1>
 
 
 
+<<<<<<< HEAD
     {% if object_list %}
         <ul>
+=======
+        {% if object_list %}
+        <ul>
+
+>>>>>>> 30dbc7f5cdeff15cb8440892246cc29e92ec4209
             {% for item in object_list %}
             <li>
                 <a href="{{ item.get_absolute_url }}">{{ item.title }}</a>
             </li>
             {% endfor %}
+<<<<<<< HEAD
         </ul>
     {% else %}
         <p>You have no lists.</p>
     {% endif %}
+=======
+
+        </ul>
+        {% else %}
+            <p>You have no lists.</p>
+        {% endif %}
+>>>>>>> 30dbc7f5cdeff15cb8440892246cc29e92ec4209
 {% endblock %}
