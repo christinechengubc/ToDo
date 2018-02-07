@@ -1,0 +1,141 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$RRs60hQJdYPr$najJyKZMYQllpCPzSIpFKI7FOMNyoLRcKf17wGwsbcA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "user01",
+      "first_name": "User",
+      "last_name": "One",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-02-07T06:33:55Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$KbDPEwf2ur5Z$p0vqmC3EfP/FdAEOFZL+lDzFsPSQleLzs4PnaoR54CE=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "user02",
+      "first_name": "User",
+      "last_name": "Two",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-02-07T06:34:32Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$J7Znz8v42jCu$tipBiRZ5rau7FjACjIhHPGzhhDIY7yQ619VNux9ibZw=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "user03",
+      "first_name": "User",
+      "last_name": "Three",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-02-07T06:47:05Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$Y1wmBa3BPAii$yiBZHoGw7DtYVH0fZTQsUCHcYtlFqkkD1LFgwcvOt3g=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "superuser",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2018-02-07T07:03:37.908Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 1,
+    "fields": {
+      "title": "list1_item1",
+      "user": 1,
+      "todo_list": 1
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 2,
+    "fields": {
+      "title": "list1_item2",
+      "user": 1,
+      "todo_list": 1
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 3,
+    "fields": {
+      "title": "shared_list_item_1",
+      "user": 1,
+      "todo_list": 3
+    }
+  },
+  {
+    "model": "catalog.todoitem",
+    "pk": 4,
+    "fields": {
+      "title": "shared_list_item_2",
+      "user": 2,
+      "todo_list": 3
+    }
+  },
+  {
+    "model": "catalog.todolist",
+    "pk": 1,
+    "fields": {
+      "title": "user01_list1",
+      "users": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "catalog.todolist",
+    "pk": 2,
+    "fields": {
+      "title": "user01_list2",
+      "users": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "catalog.todolist",
+    "pk": 3,
+    "fields": {
+      "title": "shared_list",
+      "users": [
+        1,
+        2
+      ]
+    }
+  }
+]

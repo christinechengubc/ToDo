@@ -1,0 +1,19 @@
+Installation:
+
+1) Install python
+	e.g. https://conda.io/miniconda.html
+	e.g. https://www.python.org/downloads/
+
+2) Install django
+	(if using miniconda): conda install pip
+	pip install django
+
+3) Initialize database
+	cd ToDo
+	make init
+
+4) Launch server
+	python manage.py runserver
+
+5) Browse on web browser
+	http://127.0.0.1:8000/catalog/
