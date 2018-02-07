@@ -14,10 +14,13 @@ def index(request):
     num_lists=TodoList.objects.all().count()
     num_items=TodoItem.objects.all().count()
 
-<<<<<<< HEAD
-    the_list = TodoList.objects.first()
-    list_items = the_list.todoitem_set.all()
-    list_name = the_list.title
+    if request.user.is_authenticated():
+        the_list = request.user.todolist_set.first()
+        todo_list = the_list.todoitem_set.all()
+        list_name = the_list.title
+    else:
+        todo_list = []
+        list_name = "No lists available"
 
     if request.method == 'POST':
         form = AddItemForm(request.POST)
@@ -30,15 +33,6 @@ def index(request):
     else:
         print(request.user.todolist_set.all());
         form = AddItemForm(initial={'lists': request.user.todolist_set.all()})
-=======
-    if request.user.is_authenticated():
-        the_list = request.user.todolist_set.first()
-        todo_list = the_list.todoitem_set.all()
-        list_name = the_list.title
-    else:
-        todo_list = []
-        list_name = "No lists available"
->>>>>>> 30dbc7f5cdeff15cb8440892246cc29e92ec4209
 
     # Render the HTML template index.html with the data in the context variable.
     return render(

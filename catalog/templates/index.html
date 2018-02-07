@@ -2,13 +2,8 @@
 
 {% block content %}
 
-<<<<<<< HEAD
-      {% if list_items %}
-            <h1>{{ list_name }}</h1>
-=======
         {% if todo_list %}
          <h1>{{ list_name }}</h1>
->>>>>>> 30dbc7f5cdeff15cb8440892246cc29e92ec4209
 
             <div class="wrapper">
                   <div class="todolist_box">
@@ -18,8 +13,15 @@
                   {% endfor %}
                   </div>
 
-<<<<<<< HEAD
-                  <div class="todoitem_box">
+            <div class="todolist_box">
+
+            {% for item in todo_list %}
+                <input id="checkBox" type="checkbox"> {{ item.title }}
+                <br>
+            {% endfor %}
+            </div>
+
+            <div class="todoitem_box">
                         <form action="" method="post">
                               <h3>Enter a todo item:</h3>
                               <table>
@@ -31,23 +33,8 @@
                   </div>
             </div>
 
-      {% else %}
-          <p>There are no items in the to do list.</p>
-      {% endif %}
-
-{% endblock %}
-=======
-            <div class="todolist_box">
-
-            {% for item in todo_list %}
-                <input id="checkBox" type="checkbox"> {{ item.title }}
-                <br>
-            {% endfor %}
-            </div>
-
         {% else %}
             <p>There are no items in the to do list.</p>
-        {% endif %}      
+        {% endif %}
 
 {% endblock %}
->>>>>>> 30dbc7f5cdeff15cb8440892246cc29e92ec4209
