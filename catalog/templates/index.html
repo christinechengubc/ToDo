@@ -6,22 +6,15 @@
          <h1>{{ list_name }}</h1>
 
             <div class="wrapper">
+
                   <div class="todolist_box">
-                  {% for item in list_items %}
-                  <input id="checkBox" type="checkbox"> {{ item.title }}
-                  <br>
-                  {% endfor %}
+                        {% for item in todo_list %}
+                            <input id="checkBox" type="checkbox"> {{ item.title }}
+                            <br>
+                        {% endfor %}
                   </div>
 
-            <div class="todolist_box">
-
-            {% for item in todo_list %}
-                <input id="checkBox" type="checkbox"> {{ item.title }}
-                <br>
-            {% endfor %}
-            </div>
-
-            <div class="todoitem_box">
+                  <div class="todoitem_box">
                         <form action="" method="post">
                               <h3>Enter a todo item:</h3>
                               <table>

@@ -41,7 +41,7 @@ def index(request):
         context={
         	'num_lists':num_lists,
         	'num_items':num_items,
-            'list_items':list_items,
+            'todo_list':todo_list,
             'list_name':list_name,
             'form': form
         },
