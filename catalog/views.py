@@ -14,7 +14,7 @@ def index(request):
     num_lists=TodoList.objects.all().count()
     num_items=TodoItem.objects.all().count()
 
-    if request.user.is_authenticated():
+    if request.user.is_authenticated:
         the_list = request.user.todolist_set.first()
         todo_list = the_list.todoitem_set.all()
         list_name = the_list.title
