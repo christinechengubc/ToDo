@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from django.views import generic
+from django.http import HttpResponseRedirect
+from django.urls import reverse
+
 
 # Create your views here.
 
@@ -18,21 +21,25 @@ def index(request):
         the_list = request.user.todolist_set.first()
         todo_list = the_list.todoitem_set.all()
         list_name = the_list.title
+        user_lists = request.user.todolist_set.all()
     else:
         todo_list = []
         list_name = "No lists available"
 
     if request.method == 'POST':
-        form = AddItemForm(request.POST)
+        form = AddItemForm(user_lists, list_name, request.POST)
 
         if form.is_valid():
-            TodoItem.objects.create(title = form.item_title, user = request.user, todo_list = form.item_list)
+            item_title = form.cleaned_data['item_title']
+            item_list = form.cleaned_data['item_list']
+            chosen_list = TodoList.objects.filter(users = request.user, title = item_list).first()
+            TodoItem.objects.create(title = item_title, user = request.user, todo_list = chosen_list)
 
-            return HttpResponseRedirect('index');
+            return HttpResponseRedirect(reverse('index'));
 
     else:
-        print(request.user.todolist_set.all());
-        form = AddItemForm(initial={'lists': request.user.todolist_set.all()})
+        print(user_lists)
+        form = AddItemForm(user_lists, list_name)
 
     # Render the HTML template index.html with the data in the context variable.
     return render(
