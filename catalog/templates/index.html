@@ -16,6 +16,7 @@
 
                   <div class="todoitem_box">
                         <form action="" method="post">
+                              {% csrf_token %}
                               <h3>Enter a todo item:</h3>
                               <table>
                                     {{ form }}
